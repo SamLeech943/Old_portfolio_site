@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+body{
+	background: #ffffff;
+  margin:auto;
+}
+
+
+ul{
+	display: flex;
+  background: #1E1F25 ;
+	width: 100%;
+	height: 50px;
+	margin: auto;
+	max-width: 1000px;
+	justify-content: space-between;
+	text-align: center;
+}
+li {
+	padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ebebeb;
+	min-width: 80px;
+	margin: auto;
+}
+
+li:hover {
+  background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #1E1F25;
+	font-weight: bold;
+}
+li:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url("https://external-preview.redd.it/GOkP8onbuyjGmN9Rc8Que5mw21CdSw6OuXpAKUuE6-4.jpg?width=960&crop=smart&auto=webp&s=baada9754b52c3be1dbf59e8d9b2502ce8ff9f8d");
+
+  /* Set a specific height */
+  min-height: 1440px;
+  min-width: 2560px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+body {
+  font-family: Tahoma, sans-serif;
+}
